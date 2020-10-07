@@ -23,7 +23,7 @@ body {
 
 .main{
   padding: 40px 80px;            
-  background-color:#000000;       
+  background-image:url(https://pixabay.com/id/photos/desktop-abstrak-seni-substansial-3107932/);   
   color: #ffffff;
   text-align:center;
 }
@@ -36,8 +36,6 @@ body {
   font-size:28px;
 }
 .isi{
-  background-image:url(https://images.app.goo.gl/XLrD32L8D6aYFaxM7);
-  color:#ffffff;
   height:600px;
   magin-top:80px;
 }
