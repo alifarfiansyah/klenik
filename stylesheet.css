@@ -23,8 +23,8 @@ body {
 
 .main{
   padding: 40px 80px;            
-  background-color:#ffFfff;       
-  color: #000000;
+  background-color:#000000;       
+  color: #ffffff;
   text-align:center;
 }
 .main h1{
@@ -36,20 +36,23 @@ body {
   font-size:28px;
 }
 .isi{
+  background-image:url(https://images.app.goo.gl/XLrD32L8D6aYFaxM7);
+  color:#ffffff;
   height:600px;
   magin-top:80px;
 }
 
 .isian{
-  text-align:justify;
   float:left;
   width:33.3%;
 }
 .isian h1{
+  text-align:center;
   font-size:24px;
   padding:0 20px;
 }
 .isian p{
+  text-align:justify;
   font-size:18px;
   margin-top:20px;
   padding:0 20px;
