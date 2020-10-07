@@ -38,12 +38,10 @@ body {
   height:400px;
   magin-top:80px;
 }
-.judul-isi{
-  font-size:24px;
-}
+
 .isian{
   float:left;
-  width:50%;
+  width:33.3%;
 }
 .isian h1{
   font-size:24px;
