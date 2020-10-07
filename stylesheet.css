@@ -1,46 +1,62 @@
 body {
-font-family: "Boogaloo";
+  font-family: "Boogaloo";
 }
 
 .header{
-background-color:#3c3c3c;
-color:#ffffff;
-height:100px;
+  background-color:#3c3c3c;
+  color:#ffffff;
+  height:100px;
 }
 .header-logo{
-float:left;
-font-size:52px;
-padding:20px 40px;
+  float:left;
+  font-size:52px;
+  padding:20px 40px;
 }
 .header-logo span{
-color:#DAA520
+  color:#DAA520
 }
 .header-list{
-font-size:14px;
-float:right;
-padding:0px 40px;
+  font-size:14px;
+  float:right;
+  padding:0px 40px;
 }
 
 .main{
-padding: 180px 0 100px 0;            
-background-image: url(https://github.com/alifarfiansyah/arfiansyah/blob/master/Project21.png);            
-background-size: cover;            
-color: #000000;            
-text-align: center;           
+  padding: 40px 80px;            
+  background-color:#ffFfff;       
+  color: #000000;               
 }
 .main h1{
-font-size:48px;
+  margin-top:0px;
+  margin-bottom:0px;
+  font-size:140px;
 }
 .main h2{
-font-size:24px;
+  font-size:60px;
 }
-.main p{
-font-size:14px;
+.isi{
+  height:400px;
+  magin-top:80px;
+}
+.judul-isi{
+  font-size:28px;
+}
+.isian{
+  float:left;
+  width:50%;
+}
+.isian h1{
+  font-size:28px;
+}
+.isian p{
+  font-size:24px;
+  margin-top:20px;
 }
 
+
 .footer{
-background-color:#3c3c3c;
-color:#ffffff;
-height:40px;
-padding-top:20px;
+  background-color:#3c3c3c;
+  color:#ffffff;
+  height:40px;
+  padding-top:20px;
 }
