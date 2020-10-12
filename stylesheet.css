@@ -79,10 +79,10 @@ body {
   transition-duration: 0.5s;
 }
 
-
 .footer{
   background-color:#3c3c3c;
   color:#ffffff;
   height:40px;
   padding-top:20px;
+  weight:100%;
 }
