@@ -23,8 +23,8 @@ body {
 
 .main{
   padding: 40px 80px;            
-  background-color:#ffffff;
-  color: #000000;
+  background-image:url(https://github.com/alifarfiansyah/klenik/blob/main/klenik.jpg);
+  color: #ffffff;
   text-align:center;
 }
 .main h1{
