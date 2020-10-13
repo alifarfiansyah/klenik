@@ -24,7 +24,8 @@ body {
 .main{
   padding: 40px 80px;            
   background-image:url(https://raw.githubusercontent.com/alifarfiansyah/klenik/main/klenik.jpg);
-  display:flux;
+  height:100%;
+  weight:100%;
   color: #ffffff;
   text-align:center;
 }
