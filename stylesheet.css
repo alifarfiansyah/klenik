@@ -20,6 +20,10 @@ body {
   float:right;
   padding:0px 40px;
 }
+li{
+  list-style: none;
+}
+
 
 .main{
   padding: 40px 80px;            
