@@ -2,9 +2,6 @@ body {
   font-family: "Boogaloo";
 }
 
-li{
-  list-style: none;
-}
 .header{
   background-color:#3c3c3c;
   color:#ffffff;
@@ -21,7 +18,7 @@ li{
 .header-list{
   font-size:14px;
   float:right;
-  margin-bottom:50px;
+  padding:0 20px;
 }
 
 .main{
