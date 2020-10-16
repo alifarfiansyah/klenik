@@ -8,7 +8,7 @@ li{
 .header{
   background-color:#3c3c3c;
   color:#ffffff;
-  height:100px;
+  height:90px;
 }
 .header-logo{
   float:left;
@@ -21,7 +21,7 @@ li{
 .header-list{
   font-size:14px;
   float:right;
-  padding:0px 40px;
+  margin-bottom:50px;
 }
 
 .main{
