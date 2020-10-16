@@ -21,6 +21,7 @@ body {
   padding:0 20px;
 }
 .header-list a {
+  color:#ffffff;
   text-decoration:none;
 }
 .header-list a:hover {
