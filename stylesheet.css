@@ -3,7 +3,7 @@ body {
 }
 
 .header{
-  background-color:#3c3c3c;
+  background-color:#000000;
   color:#ffffff;
   height:100px;
 }
@@ -13,7 +13,7 @@ body {
   padding:20px 40px;
 }
 .header-logo span{
-  color:#DAA520
+  color:#DAA520;
 }
 .header-list{
   float:right;
@@ -25,7 +25,7 @@ body {
   text-decoration:none;
 }
 .header-list a:hover {
-  color:#3c3c3c;
+  color:#DAA520;
   transition-duration: 0.5s;
 }
 
@@ -83,12 +83,12 @@ body {
   text-decoration:none;
 }
 .pesan a:hover {
-  background-color:#3c3c3c;
+  background-color:#000000;
   transition-duration: 0.5s;
 }
 
 .footer{
-  background-color:#3c3c3c;
+  background-color:#000000;
   color:#ffffff;
   height:40px;
   padding-top:20px;
