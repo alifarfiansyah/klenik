@@ -53,6 +53,9 @@
     .pesan-terakhir h2 {
         font-size: 20px;
     }
+    .waktu {
+        font-size: 16px;
+    }
 }
 
 
@@ -81,7 +84,8 @@
     }
     .main {
         width: 100%;
-        height: 1500px;
+        height: 1450px;
+        padding: 80px 0 20px 0;
     }
     .main-atas {
         padding: 10px 0 30px 0;
@@ -91,6 +95,12 @@
     }
     .main-atas p {
         font-size: 14px;
+    }
+    .main-tengah {
+        height: 850px;
+    }
+    .main-bawah {
+        margin-top: 10px;
     }
     .isian {
         width: 100%;
@@ -115,7 +125,16 @@
     .pesan a {
         padding: 10px 30px;
     }
+    .pesan-terakhir {
+        height: 50px;
+    }
     .pesan-terakhir h2 {
         font-size: 18px;
+    }
+    .waktu {
+        margin-top: 180px;
+        height: 20px;
+        margin-bottom: 0;
+        font-size: 12px;
     }
 }
