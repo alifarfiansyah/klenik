@@ -10,12 +10,12 @@ if (d.getMinutes() < 10) {
     menit = d.getMinutes();
 }
 if (waktu < 10) {
-    ucapan = "Selamat pagi klenikers"
+    ucapan = "Selamat pagi klenikers!!!"
 } else if (waktu >= 10 && waktu < 17) {
-    ucapan = "Selamat siang klenikers"
+    ucapan = "Selamat siang klenikers!!!"
 } else if (waktu >= 17 && waktu < 22) {
-    ucapan = "Selamat sore klenikers"
+    ucapan = "Selamat sore klenikers!!!"
 } else {
-    ucapan = "Selamat malam klenikers"
+    ucapan = "Selamat malam klenikers!!!"
 }
-document.getElementById("waktu").innerHTML = ucapan + "<br>" + hari[d.getDay()] + ", " + d.getDate() + " " + bulan[d.getMonth()] + " " + d.getFullYear() + " Pukul " + d.getHours() + ":" + d.getMinutes();
+document.getElementById("waktu").innerHTML = ucapan + " " + hari[d.getDay()] + ", " + d.getDate() + " " + bulan[d.getMonth()] + " " + d.getFullYear() + " Pukul " + d.getHours() + ":" + d.getMinutes();
