@@ -18,4 +18,4 @@ if (waktu < 10) {
 } else {
     ucapan = "Selamat malam klenikers"
 }
-document.getElementById("waktu").innerHTML = hari[d.getDay()] + ", " + d.getDate() + " " + bulan[d.getMonth()] + " " + d.getFullYear() + " Pukul " + d.getHours() + ":" + d.getMinutes() + "<br>" + ucapan;
+document.getElementById("waktu").innerHTML = ucapan + "<br>" + hari[d.getDay()] + ", " + d.getDate() + " " + bulan[d.getMonth()] + " " + d.getFullYear() + " Pukul " + d.getHours() + ":" + d.getMinutes();
