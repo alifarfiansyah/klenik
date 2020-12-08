@@ -185,9 +185,10 @@ header {
     border-radius: 5px;
     color: #ffffff;
     background-color: #000000;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    margin-top: 80px;
+    margin-bottom: 10px;
     text-align: center;
+    box-shadow: 0 7px #DAA520;
 }
 
 .badan h2 {
