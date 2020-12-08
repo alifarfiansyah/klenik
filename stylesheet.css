@@ -95,7 +95,10 @@ header {
 .main-atas p {
     font-size: 28px;
 }
-
+.main-bawah {
+    padding: 20px 0;
+    color: #ffffff;
+}
 .main-terbawah {
     padding: 20px 0;
     color: #ffffff;
