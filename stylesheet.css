@@ -155,7 +155,13 @@ header {
     top: 7px;
     position: relative;
 }
-
+.waktu{
+    float: right;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 0;
+}
 .isian {
     width: 33.3%;
     float: left;
