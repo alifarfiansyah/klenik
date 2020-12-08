@@ -134,6 +134,10 @@ header {
     font-size: 24px;
 }
 
+.waktu {
+    font-size: 20px;
+}
+
 .pesan {
     padding: 15px 0;
     margin-top: 2px;
@@ -206,7 +210,6 @@ header {
     margin-top: 6px;
     text-align: justify;
 }
-
 
 .baris:after {
     content: "";
