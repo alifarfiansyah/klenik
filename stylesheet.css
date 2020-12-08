@@ -95,14 +95,7 @@ header {
 .main-atas p {
     font-size: 28px;
 }
-.main-bawah {
-    padding: 20px 0;
-    color: #ffffff;
-}
-.main-terbawah {
-    padding: 20px 0;
-    color: #ffffff;
-}
+
 .perwetonan {
     background-color: #000000;
     height: 440px;
@@ -162,13 +155,7 @@ header {
     top: 7px;
     position: relative;
 }
-.waktu{
-    float: right;
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 0;
-}
+
 .isian {
     width: 33.3%;
     float: left;
