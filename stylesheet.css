@@ -77,7 +77,6 @@ header {
     margin-top: 80px;
     margin-bottom: 10px;
     text-align: center;
-    height: 800px;
     box-shadow: 0 7px #DAA520;
 }
 
@@ -161,8 +160,8 @@ header {
 }
 
 .isian {
-    width: 33.3%;
-    float: left;
+    margin: 1px auto;
+    padding: 1px 0;
 }
 
 .isian h1 {
@@ -176,8 +175,13 @@ header {
 .isian p {
     text-align: justify;
     font-size: 18px;
-    margin-top: 20px;
+    margin: 20px 0;
     padding: 0 20px;
+}
+
+.kata {
+    margin: auto;
+    max-width: fit-content;
 }
 
 .badan {
