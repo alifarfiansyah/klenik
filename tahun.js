@@ -45,7 +45,7 @@ form.addEventListener('submit', function(event) {
         has[0] +
         ' yang artinya ' +
         has[1] +
-        '. Dan hasil hitung weton sisa kalian berdua adalah ' +
+        ' Dan hasil hitung weton sisa kalian berdua adalah ' +
         sisa[0] +
         ' yang artinya ' +
         sisa[1] +
@@ -830,32 +830,32 @@ function wetonsisa(jumlah, jumlah2) {
 if (wetonsisa==0){
         sisa='Lebu ketiup angin';
 
-        keterangan='Lebu ketiup angin berarti sulit mencapai cita-cita, sering mendapatkan kesusahan, dan sering pindah rumah. Dalam primbon jawa biasanya dilakukan menabur debu saat akan Ijab Qobul guna menolak bala hal tersebut.';
+        keterangan='sulit mencapai cita-cita, sering mendapatkan kesusahan, dan sering pindah rumah. Dalam primbon jawa biasanya dilakukan menabur debu saat akan Ijab Qobul guna menolak bala hal tersebut.';
 
     }else if (wetonsisa==1){
 
         sisa='Wasesasegara';
-        keterangan='Wasesasegara berarti mempunyai watak yang sabar, pemaaf, berbudi luhur, dan berwibawa.';
+        keterangan='mempunyai watak yang sabar, pemaaf, berbudi luhur, dan berwibawa.';
     }else if (wetonsisa==2){
 
         sisa='Tunggaksemi';
-        keterangan='Tunggaksemi berarti rezeki dimudahkan dan dilancarkan.';
+        keterangan='rezeki dimudahkan dan dilancarkan.';
     }else if (wetonsisa==3){
 
         sisa='Satriya wibawa';
-        keterangan='Satriya wibawa berarti memperoleh kemuliaan dan keluhuran yang tinggi.';
+        keterangan='memperoleh kemuliaan dan keluhuran yang tinggi.';
     }else if (wetonsisa==4){
 
         sisa='Sumur sinaba';
-        keterangan='Sumur sinaba berarti banyak orang yang datang berguru dan meminta ilmu.';
+        keterangan='banyak orang yang datang berguru dan meminta ilmu.';
     }else if (wetonsisa==5){
 
         sisa='Satriya wirang';
-        keterangan='Satriya wirang berarti sering mendapatkan duka cita. Kesusahan , sering malu akibat tindakannya sendiri. Dalam kitab primbon jawa, untuk menolak balak hal tersebut bisa memotong ayam saat Ijab Qobul.';
+        keterangan='sering mendapatkan duka cita. Kesusahan , sering malu akibat tindakannya sendiri. Dalam kitab primbon jawa, untuk menolak balak hal tersebut bisa memotong ayam saat Ijab Qobul.';
     }else if (wetonsisa==6){
 
         sisa='Bumikepetak';
-        keterangan='Bumikepetak berarti hatinya lapang, banyak mengalami cobaan dan rintangan hidup, serta pekerja keras. Biasanya untuk menolak hal tersebut dapat memendam/mengubur tanah saat akan Ijab Qobul.';
+        keterangan='hatinya lapang, banyak mengalami cobaan dan rintangan hidup, serta pekerja keras. Biasanya untuk menolak hal tersebut dapat memendam/mengubur tanah saat akan Ijab Qobul.';
     }
 
     var hasil = [sisa, keterangan];
