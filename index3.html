@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Klenik Pedia </title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-logo"><a href="index.html">Klenik <span>Pedia<span></span></a></div>
+            <div class="header-right" id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="index2.html">Perwetonan</a>
+                <a href="index3.html">Konsultasi</a>
+            </div>
+        </div>
+    </header>
+    <div class="badan">
+        <div class="container">
+            <h2>ISI DATA ANDA DENGAN LENGKAP</h2>
+            <form id="form">
+                <div class="baris">
+                    <div class="kolom1">
+                        <label for="">Nama Lengkap Anda</label>
+                    </div>
+                    <div class="kolom2">
+                        <input type="text" name="nama" id="nama" placeholder="Tuliskan Nama Lengkap Anda Disini..." required autocomplete="off" />
+                    </div>
+                </div>
+                <div class="baris">
+                    <div class="kolom1">
+                        <label for="">Tanggal Lahir Anda</label><br>
+                    </div>
+                    <div class="kolom2">
+                        <input type="date" name="tgl" id="tgl" value="2000-01-01" required>
+                    </div>
+                </div>
+                <div class="baris">
+                    <div class="kolom1">
+                        <label for="">Nama Lengkap Pasangan Anda</label>
+                    </div>
+                    <div class="kolom2">
+                        <input type="text" name="namap" id="namap" placeholder="Tuliskan Nama Lengkap Pasangan Anda Disini..." required autocomplete="off" />
+                    </div>
+                </div>
+                <div class="baris">
+                    <div class="kolom1">
+                        <label for="">Tanggal Lahir Pasangan Anda</label><br>
+                    </div>
+                    <div class="kolom2">
+                        <input type="date" name="tglp" id="tglp" value="2000-01-01" required>
+                    </div>
+                </div>
+                <div class="baris">
+                    <input type="submit" value="Selesai" onclick="fungsi()">
+                </div>
+            </form>
+        </div>
+
+        <div class="container" id="hasil" style="display: none;">
+            <div class="nama ">
+                <p>WETON</p>
+            </div>
+            <div class="tulisan">
+                <p>JANGAN SAMPAI HUBUNGAN ANDA HANCUR GARA-GARA WETON</p>
+            </div>
+            <div class="baris">
+                <div class="kolom3 ">
+                    <p>Hasil Perhitungan Weton</p>
+                </div>
+                <div class="kolom4 ">
+                    <p id="tahun">
+                        <script src="tahun.js "></script>
+                    </p>
+		    <span class="pesan2" style="text-align: right;"><a href="index3.html">Hitung Lagi</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer ">
+        <p style="text-align: center;"> Klenik Pedia &copy 2019. Created by <a style="font-weight: bold;"href="https://www.instagram.com/arfiansyah09_/">Able</a></p>
+    </div>
+    <script>
+        function fungsi() {
+            var x = document.getElementById("hasil");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
