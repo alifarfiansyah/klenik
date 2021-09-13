@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Boogaloo";
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    padding: 30 15px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    padding-left: 20px;
+    position: fixed;
+    border-radius: 5px;
+    background-color: #000000;
+    top: 0;
+    box-shadow: 0 7px #DAA520;
+}
+
+.header-logo {
+    float: left;
+    font-size: 52px;
+    line-height: 70px;
+}
+
+.header-logo span {
+    color: #DAA520;
+}
+
+.header-right {
+    color: #ffffff;
+    font-size: 18px;
+    float: right;
+}
+
+.header-right a {
+    line-height: 70px;
+    padding: 0 25px;
+    columns: #ffffff;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.header-right a:hover {
+    color: #DAA520;
+}
+
+.main {
+    padding: 80px 0;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #000000;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 7px #DAA520;
+}
+
+.main2 {
+    padding: 50px 0;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #000000;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 800px;
+    box-shadow: 0 7px #DAA520;
+}
+
+.main-atas {
+    padding: 20px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.main-atas h1 {
+    letter-spacing: 4px;
+    font-size: 48px;
+}
+
+.main-atas p {
+    font-size: 28px;
+}
+
+.perwetonan {
+    background-color: #000000;
+    height: 440px;
+}
+
+.perwetonan h3 {
+    padding: 40px 0;
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.konten {
+    float: left;
+    width: 33.3%;
+}
+
+.konten:active {
+    background-color: #ffffff;
+}
+
+.konten p {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.pesan-terakhir {
+    height: 100px;
+    text-align: center;
+}
+
+.pesan-terakhir h2 {
+    font-size: 24px;
+}
+
+.pesan {
+    padding: 15px 0;
+    margin-top: 2px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    background-color: #DAA520;
+    box-shadow: 0 7px #ffdd88;
+    font-size: 20px;
+}
+
+.pesan a {
+    color: #ffffff;
+    padding: 15px 60px;
+    text-decoration: none;
+}
+
+.pesan:active {
+    box-shadow: none;
+    top: 7px;
+    position: relative;
+}
+
+.isian {
+    width: 33.3%;
+    float: left;
+}
+
+.isian h1 {
+    margin-top: 30px;
+    color: #DAA520;
+    text-align: center;
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+.isian p {
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.badan {
+    padding: 80px 0;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #000000;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.badan h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.kolom1 {
+    font-weight: bold;
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+.kolom2 {
+    float: right;
+    width: 70%;
+    padding: 0 20px;
+    margin-top: 6px;
+    text-align: justify;
+}
+
+.kolom3 {
+    font-weight: bold;
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+    text-align: right;
+    border-right: 2px solid #000000;
+}
+
+.kolom4 {
+    float: right;
+    width: 75%;
+    padding: 0 15px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.kolom3 p {
+    color: #ffffff;
+    padding-right: 50px;
+}
+
+.baris:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text],
+input[type=date] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DAA520;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+label {
+    padding: 10px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #DAA520;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 6px;
+    margin-right: 10px;
+    box-shadow: 0 7px #ffdd88;
+}
+
+.pesan2:active {
+    box-shadow: none;
+    top: 7px;
+    position: relative;
+}
+
+.pesan2 {
+    background-color: #DAA520;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 6px;
+    margin-right: 10px;
+    box-shadow: 0 7px #ffdd88;
+}
+
+.pesan2:active {
+    box-shadow: none;
+    top: 7px;
+    position: relative;
+}
+
+.nama {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.tulisan {
+    color: #ffffff;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    border-radius: 5px;
+}
