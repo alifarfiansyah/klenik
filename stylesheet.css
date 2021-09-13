@@ -76,6 +76,7 @@ header {
     background-color: #000000;
     margin-top: 80px;
     margin-bottom: 10px;
+    height: 800px;
     text-align: center;
     box-shadow: 0 7px #DAA520;
 }
