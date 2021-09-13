@@ -40,6 +40,9 @@
     .kolom2 {
         width: 60%;
     }
+    .main2 {
+        height: 1100px;
+    }
     .pesan {
         padding: 12px 0;
         font-size: 18px;
@@ -49,9 +52,6 @@
     }
     .pesan-terakhir h2 {
         font-size: 20px;
-    }
-    .waktu {
-        font-size: 16px;
     }
 }
 
@@ -65,9 +65,6 @@
     .konten p {
         font-size: 14;
         padding: 5px;
-    }
-    .header-logo a {
-        font-size: 42px;
     }
     .header-right {
         padding-top: 5px;
@@ -84,7 +81,7 @@
     }
     .main {
         width: 100%;
-        padding: 80px 0 20px 0;
+        height: 1400px;
     }
     .main-atas {
         padding: 10px 0 30px 0;
@@ -94,12 +91,6 @@
     }
     .main-atas p {
         font-size: 14px;
-    }
-    .main-tengah {
-        height: 850px;
-    }
-    .main-bawah {
-        margin-top: 10px;
     }
     .isian {
         width: 100%;
@@ -115,8 +106,7 @@
         width: 100%;
     }
     .main2 {
-        padding-top: 20px;
-        margin-top: 30px;
+        height: 1450px;
     }
     .pesan {
         padding: 10px 0;
@@ -125,73 +115,7 @@
     .pesan a {
         padding: 10px 30px;
     }
-    .pesan-terakhir {
-        height: 50px;
-    }
     .pesan-terakhir h2 {
         font-size: 18px;
-    }
-    .waktu {
-        margin-top: 180px;
-        height: 20px;
-        margin-bottom: 0;
-        font-size: 12px;
-    }
-    .isian p {
-        font-size: 16px;
-    }
-}
-
-/* Untuk Smartphone lama */
-
-@media all and (max-width: 360px) {
-    .header-logo a {
-        font-size: 36px;
-    }
-    .konten p {
-        font-size: 14px;
-    }
-    .judul-isian h1 {
-        font-size: 18px;
-    }
-    .isian p {
-        font-size: 14px;
-    }
-    .main2 {
-        margin-top: 80px;
-    }
-    .badan {
-        margin-top: 80px;
-    }
-    .badan h2 {
-        font-size: 20px;
-    }
-    .badan label {
-        font-size: 14px;
-    }
-    .badan input {
-        font-size: 12px;
-    }
-    input[type="submit"] {
-        padding: 8px 30px;
-    }
-}
-
-/* Untuk Smartphone jadul */
-
-@media all and (max-width: 320px) {
-    header .header {
-        padding: 0;
-        margin-left: 5px;
-    }
-    .header-logo a {
-        font-size: 28px;
-    }
-    .main {
-        margin-top: 80px;
-        padding-top: 60px;
-    }
-    .main-atas {
-        padding-bottom: 10px;
     }
 }
