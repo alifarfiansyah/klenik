@@ -119,3 +119,70 @@
         font-size: 18px;
     }
 }
+
+/* Untuk Smartphone Kecil */
+
+@media all and (max-width: 360px) {
+    .konten {
+        width: 100%;
+    }
+    .konten p {
+        font-size: 14;
+        padding: 5px;
+    }
+    .header-right {
+        padding-top: 5px;
+        font-size: 9px;
+        margin: 0;
+    }
+    .header-logo{
+        font-size: 30px;
+    }
+    .header-right a {
+        padding: 0 10px;
+        line-height: 20px;
+        float: none;
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .main {
+        width: 100%;
+        height: 1400px;
+    }
+    .main-atas {
+        padding: 10px 0 30px 0;
+    }
+    .main-atas h1 {
+        font-size: 24px;
+    }
+    .main-atas p {
+        font-size: 14px;
+    }
+    .isian {
+        width: 100%;
+    }
+    .perwetonan h3 {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .kolom1 {
+        width: 100%;
+    }
+    .kolom2 {
+        width: 100%;
+    }
+    .main2 {
+        height: 2000px;
+    }
+    .pesan {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .pesan a {
+        padding: 10px 30px;
+    }
+    .pesan-terakhir h2 {
+        font-size: 18px;
+    }
+}
