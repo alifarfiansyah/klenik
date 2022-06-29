@@ -25,10 +25,8 @@ form.addEventListener('submit', function(event) {
     var jumlah2 = hitung(hari2, pasaran2);
 
     var has = hasil(jumlah, jumlah2);
-    var sisa = wetonsisa(jumlah, jumlah2);
 
-
-    document.getElementById('tahun').innerHTML =
+    document.getElementById('hasilweton').innerHTML =
         'Nama anda adalah ' +
         nama +
         ', dan nama pasangan anda adalah ' +
@@ -45,12 +43,7 @@ form.addEventListener('submit', function(event) {
         has[0] +
         ' yang artinya ' +
         has[1] +
-        ' Dan hasil hitung weton sisa kalian berdua adalah ' +
-        sisa[0] +
-        ' yang artinya ' +
-        sisa[1] +
         ' Mungkin itu sedikit uraian dari kami, kami harap hasil tersebut dapat menjadi referensi anda.';
-    // console.log(weton(tanggal, bulan, tahunasli));
 });
 
 function weton(tanggal, bulan, tahunasli) {
@@ -790,74 +783,30 @@ function hasil(weton1, weton2) {
     hasilhitung = weton1 + weton2;
     if (hasilhitung == 1 || hasilhitung == 9 || hasilhitung == 10 || hasilhitung == 18 || hasilhitung == 19 || hasilhitung == 27 || hasilhitung == 28 || hasilhitung == 36) {
         has = 'PEGAT';
-        keterangan =
-            'Pegat atau pegatan, dalam bahasa jawa berarti bercerai. Pasangan ini kemungkinan akan sering menghadapi masalah dikemudian hari. Masalah itu bisa dari masalah ekonomi, perselingkuhan, kekuasaan yang bisa menyebabkan perceraian.';
+        keterangan = 'Pegat atau pegatan, dalam bahasa jawa berarti bercerai. Pasangan ini kemungkinan akan sering menghadapi masalah dikemudian hari.';
     } else if (hasilhitung == 2 || hasilhitung == 11 || hasilhitung == 20 || hasilhitung == 29) {
         has = 'RATU';
-        keterangan =
-            'Ratu identik dengan sosok yang dihormati. Jika hasilnya ratu, pasangan ini bisa dikatakan sudah cocok dan berjodoh. Sangat dihargai dan disegani oleh tetangga maupun lingkungan sekitar. Bahkan tak sedikit orang sekitar yang iri dengan keharmonisannya dalam membina rumah tangga.';
+        keterangan = 'Ratu identik dengan sosok yang dihormati. Salah satu dari suami atau istri akan mendapatkan jabatan yang terhormat dan mulia.';
     } else if (hasilhitung == 3 || hasilhitung == 12 || hasilhitung == 21 || hasilhitung == 30) {
         has = 'JODOH';
-        keterangan = 'Namanya saja sudah jodoh. Jika hasilnya Jodoh, pasangan ini memang ditakdirkan berjodoh. Mereka bisa saling menerima segala kekurangan maupun kelebihan masing-masing. Nasib rumah tangga dapat harmonis sampai tua.';
+        keterangan = 'Jika hasilnya Jodoh, pasangan ini memang ditakdirkan berjodoh. Mereka bisa saling menerima segala kekurangan maupun kelebihan masing-masing';
     } else if (hasilhitung == 4 || hasilhitung == 13 || hasilhitung == 22 || hasilhitung == 31) {
-        has = 'TOPO';
-        keterangan =
-            'Topo, dalam bahasa jawa bisa diartikan bertirakat. Pasangan ini akan sering mengalami kesusahan di awal-awal membina rumah tangga, namun pada akhirnya akan bahagia. Persoalan rumah tangga bisa dari ekonomi dan lain sebagainya. Tapi setelah mempunyai anak dan cukup lama berumah tangga, hidupnya akan sukses serta bahagia.';
+        has = 'PATI';
+        keterangan = 'Pati, dalam bahasa jawa artinya meninggal. Pasangan ini kemungkinan akan mendapatkan kematian dari anggota keluarganya.';
     } else if (hasilhitung == 5 || hasilhitung == 14 || hasilhitung == 23 || hasilhitung == 32) {
         has = 'TINARI';
         keterangan = 'Pasangan ini akan mendapatkan kebahagiaan. Kemudahan dalam mencari rezeki dan tidak akan hidup berkekurangan. Hidupnya juga diliputi keberuntungan.';
     } else if (hasilhitung == 6 || hasilhitung == 15 || hasilhitung == 24 || hasilhitung == 33) {
         has = 'PADU';
-        keterangan =
-            'Padu dalam bahasa jawa berarti cekcok atau pertengkaran. Rumah tangga pasangan ini akan sering mengalami pertikaian atau pertengkaran. Meski sering terjadi pertengkaran, nasib rumah tangga tidak sampai bercerai. Pertengkaran ini bahkan dipicu dari hal-hal yang bersifat sepele.';
+        keterangan = 'Padu dalam bahasa jawa berarti cekcok atau pertengkaran. Rumah tangga pasangan ini akan sering mengalami pertikaian atau pertengkaran.';
     } else if (hasilhitung == 7 || hasilhitung == 16 || hasilhitung == 25 || hasilhitung == 34) {
         has = 'SUJANAN';
-        keterangan = 'Rumah tangga ini akan sering mengalami percekcokan dan masalah perselingkuhan. Entah dari sang suami atau istri yang mulai membuat hubungan perselingkuhan.';
+        keterangan = 'Rumah tangga ini akan mengalami gangguan besar dan berat yang akan mengakibatkan menderitanya suami dan istri ';
     } else if (hasilhitung == 8 || hasilhitung == 17 || hasilhitung == 26 || hasilhitung == 35) {
         has = 'PESTHI';
-        keterangan = 'Rumah tangga akan berjalan dengan sangat harmonis, rukun , adem, ayem, tenteram dan sejahtera sampai tua. Sedikit masalah namun tidak megganggu keharmonisan.';
+        keterangan = 'Rumah tangga akan berjalan dengan sangat harmonis, rukun , adem, ayem, tenteram dan sejahtera sampai tua.';
     }
 
     var hasil = [has, keterangan];
-    return hasil;
-}
-
-
-function wetonsisa(jumlah, jumlah2) {
-    hasilhitung=jumlah+jumlah2;
-    wetonsisa=hasilhitung%7;
-    
-if (wetonsisa==0){
-        sisa='Lebu ketiup angin';
-
-        keterangan='sulit mencapai cita-cita, sering mendapatkan kesusahan, dan sering pindah rumah. Dalam primbon jawa biasanya dilakukan menabur debu saat akan Ijab Qobul guna menolak bala hal tersebut.';
-
-    }else if (wetonsisa==1){
-
-        sisa='Wasesasegara';
-        keterangan='mempunyai watak yang sabar, pemaaf, berbudi luhur, dan berwibawa.';
-    }else if (wetonsisa==2){
-
-        sisa='Tunggaksemi';
-        keterangan='rezeki dimudahkan dan dilancarkan.';
-    }else if (wetonsisa==3){
-
-        sisa='Satriya wibawa';
-        keterangan='memperoleh kemuliaan dan keluhuran yang tinggi.';
-    }else if (wetonsisa==4){
-
-        sisa='Sumur sinaba';
-        keterangan='banyak orang yang datang berguru dan meminta ilmu.';
-    }else if (wetonsisa==5){
-
-        sisa='Satriya wirang';
-        keterangan='sering mendapatkan duka cita. Kesusahan , sering malu akibat tindakannya sendiri. Dalam kitab primbon jawa, untuk menolak balak hal tersebut bisa memotong ayam saat Ijab Qobul.';
-    }else if (wetonsisa==6){
-
-        sisa='Bumikepetak';
-        keterangan='hatinya lapang, banyak mengalami cobaan dan rintangan hidup, serta pekerja keras. Biasanya untuk menolak hal tersebut dapat memendam/mengubur tanah saat akan Ijab Qobul.';
-    }
-
-    var hasil = [sisa, keterangan];
     return hasil;
 }

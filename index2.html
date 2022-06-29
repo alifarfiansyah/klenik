@@ -1,60 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Klenik Pedia </title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="responsive.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="custom.css" />
+
+    <title>Klenik Pedia</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-logo"><a href="index.html">Klenik <span>Pedia<span></span></a></div>
-            <div class="header-right" id="myLinks">
-                <a href="index.html">Home</a>
-                <a href="index2.html">Perwetonan</a>
-                <a href="index3.html">Konsultasi</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="d-flex">
+                <a class="navbar-brand fw-bold" href="index.html">Klenik<span class="text-primary">Pedia</span></a>
+            </div>
+            <div class="col">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index2.html">Perwetonan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index3.html">Konsultasi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="d-flex">
+                    <div class="form-check form-switch ms-auto mt-3 me-3">
+                        <label class="form-check-label ms-2" for="lightSwitch">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-brightness-high">
+                  <path
+                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                  />
+                </svg>
+              </label>
+                        <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <div class="main2">
-        <div class="container">
-            <div class="isian">
-                <div class="judul-isian">
-                    <h1 id="penjelasanweton">Penjelasan weton</h1>
-                </div>
-                <p>Weton adalah ilmu titen atau lebih tepatnya ilmu mengingat bagaimana sifat seseorang berdasarkan hari lahirnya. Dalam masyarakat jawa, hari dibedakan menjadi dua, yakni hari dan pasaran. Hari ada tujuh yakni: Minggu, Senin, Selasa, Rabu,
-                    Kamis, Jumat dan sabtu sedangkan pasaran ada lima yakni Pahing, Pon, Wage, Kliwon dan Legi. Tiap hari dan pasaran memiliki hirungan tersendiri yang nantinya jumlahan dari hitungan tersebut menjadi acuan bagaimana prediksi sifat dari
-                    orang yang lahir pada hari tersebut. Hitungan tersebut dinamakan neptu, seperti contoh neptu dari hari jumat adalah 6, neptu dari pasaran kliwon adalah 8 dan lain sebagainya. Jumlahan dari neptu hari dan pasaran disebut hasil weton,
-                    seperti contoh hasil weton dari jumat kliwon adalah 14. Hasil weton inilah yang nantinya akan menjadi prediksi bagaimana watak seseorang yang lahir pada hari tersebut.</p>
+    <div class="container-fluid">
+        <div class="row align-content-center mt-4 mb-4">
+            <div class="col-md-6">
+                <h5 class="text-center" id="penjelasanweton">Penjelasan weton</h5>
+                <p style="text-align: justify; padding: 0 20px 0 20px">
+                    Weton adalah salah satu ilmu dari orang-orang jawa yang digunakan untuk memprediksi watak seseorang, ilmu tersebut didasari pada ingatan-ingatan para orang terdahulu terhadap watak seseorang melalui hari kelahirannya. Dalam masyarakat jawa, hari terbagi
+                    menjadi menjadi dua, yakni hari dan pasaran. Hari ada tujuh yakni: Minggu, Senin, Selasa, Rabu, Kamis, Jumat dan sabtu. Sedangkan pasaran ada lima yakni: Pahing, Pon, Wage, Kliwon dan Legi. Tiap hari dan pasaran memiliki hitungan tersendiri
+                    yang nantinya jumlahan dari hitungan tersebut menjadi acuan bagaimana prediksi sifat dari orang yang lahir pada hari tersebut. Jumlah hitungan tersebut dinamakan neptu. Contoh: neptu dari hari jumat adalah 6, neptu dari pasaran kliwon
+                    adalah 8 dan lain sebagainya. Jumlahan dari neptu hari dan pasaran disebut hasil weton, seperti contoh hasil weton dari jumat kliwon adalah 14. Hasil weton inilah yang nantinya akan menjadi prediksi bagaimana watak seseorang yang lahir
+                    pada hari tersebut.
+                </p>
             </div>
-            <div class="isian">
-                <div class="judul-isian">
-                    <h1 id="hubunganweton">Hubungan weton dengan matematika</h1>
-                </div>
-                <p>Telah kita ketahui bahwa weton adalah ilmu titen untuk mengingat bagaimana sifat seseorang berdasarkan hari lahirnya yang kemudian dari hari dan pasarannya tersebut dijadikan angka yang kemudian hasilnya dihitung dengan metode modulo.
-                    Untuk menguasai ilmu hitung weton kita terlebih dahulu harus menguasai ilmu hitung dasar matematika, diantaranya penjumlahan, pembagian serta pecahan. Penjumlahan digunakan untuk menghitung hasil dari perhitungan weton sedangkan pembagian
-                    dan pecahan digunakan sebagai dasar dari teori modulo yang akan digunakan untuk menyelesaikan perhitungan dan mengambil kesimpulan. Perhitungan weton jodoh biasanya menggunakan modulo 10 sehingga ada 9 kemungkinan kesimpulan yang akan
-                    diterima oleh sebuah pasangan dengan 1 dari 9 kesimpulan tersebut adalah berakhir jodoh.</p>
+            <div class="col-md-6">
+                <h5 class="text-center" id="hubunganweton">Hubungan weton dengan matematika</h5>
+                <p style="text-align: justify; padding: 0 20px 0 20px">
+                    Diketahui bahwa bahwa weton adalah salah satu ilmu dari orang-orang jawa yang digunakan untuk memprediksi watak seseorang berdasarkan hari lahirnya, yang kemudian dari hari dan pasarannya tersebut dipeeroleh neptu, yang selanjutnya akan dihitung dengan
+                    metode modulo. Untuk menguasai ilmu hitung weton kita terlebih dahulu harus menguasai ilmu hitung dasar matematika, diantaranya penjumlahan, pembagian serta pecahan. Penjumlahan digunakan untuk menghitung hasil dari perhitungan weton
+                    sedangkan pembagian dan pecahan digunakan sebagai dasar dari teori modulo yang akan digunakan untuk menyelesaikan perhitungan dan mengambil kesimpulan. Menurut (Harahap, Adly dan Marpaung, 2021) dalam jurnalnya yang berjudul "Perhitungan
+                    Weton sebagai Penentu Hari Pernikahan dalam Tradisi Masyarakat Jawa Kabupaten Deli Serdang (Ditinjau dalam Persfektif 'Urf dan Sosiologi Hukum)", perhitungan weton jodoh biasanya menggunakan modulo 9 sehingga ada 8 kemungkinan kesimpulan
+                    yang akan diterima oleh sebuah pasangan dengan 1 dari 8 kesimpulan tersebut adalah berakhir jodoh.
+                </p>
             </div>
-            <div class="isian">
-                <div class="judul-isian">
-                    <h1 id="kegunaananweton">Kegunaan lain weton</h1>
-                </div>
-                <p>Selain digunakan untuk memprediksi bagaimana watak seseorang, weton juga dapat digunakan untuk meprediksi kecocokan jodoh, waktu memanen tanaman dan lain sebagainya. Contoh singkat weton untuk memprediksi jodoh adalah ketika ada pasangan
-                    yang hendak menikah maka sebelumnya perlu diketahui hari dan pasaran dari masing-masing pribadi. Misalnya seseorang yang lahir pada senin pahing dan kamis kliwon. Senin pahing memiliki hasil weton 13 dan rabu wage memiliki hasil
-                    weton 11, sehingga jumlah dari keduanya ketemu 24. Hasil penjumlahan weton pasangan yang ketemu 24 dipercaya orang jawa sebagai hasil yang buruk yaitu Padu yang dalam bahasa jawa berarti cekcok atau pertengkaran. Rumah tangga pasangan ini akan sering mengalami pertikaian atau pertengkaran. Meski sering terjadi pertengkaran, nasib rumah tangga tidak sampai bercerai. Pertengkaran ini bahkan dipicu dari hal-hal yang bersifat sepele. Sehingga disarankan untuk tidak melanjutkannya ke jenjang pernikahan. Itulah sulitnya hidup di jawa, terkadang mencari calon saja sudah susah ditambah ketika weton tidak pas, hilanglah sudah pasangan yang ingin dinikahi.</p>
+            <div class="col-auto">
+                <h5 class="text-center mt-3" id="kegunaananweton">Kegunaan lain weton</h5>
+                <p style="text-align: justify; padding: 0 20px 0 20px">
+                    Selain digunakan untuk memprediksi bagaimana watak seseorang, weton juga dapat digunakan untuk meprediksi kecocokan jodoh, waktu memanen tanaman dan lain sebagainya. Contoh singkat weton untuk memprediksi jodoh adalah ketika ada pasangan yang hendak menikah
+                    di beberapa daerah di jawa yang masyarakatnya masim mempercayai perhitungan weton maka sebelumnya perlu diketahui hari dan pasaran dari masing-masing pribadi. Misalnya seseorang yang lahir pada senin pahing dan kamis kliwon. Senin
+                    pahing memiliki neptu 13 dan rabu wage memiliki neptu 11, sehingga jumlah dari keduanya ketemu 24. Hasil penjumlahan weton pasangan yang ketemu 24 dipercaya orang jawa sebagai hasil yang buruk yaitu Padu yang dalam bahasa jawa berarti
+                    cekcok atau pertengkaran. Rumah tangga pasangan ini akan sering mengalami pertikaian atau pertengkaran. Meski sering terjadi pertengkaran, nasib rumah tangga tidak sampai bercerai. Pertengkaran ini bahkan dipicu dari hal-hal yang bersifat
+                    sepele. Sehingga disarankan untuk tidak melanjutkannya ke jenjang pernikahan. Itulah sulitnya hidup di jawa yang masih kental dengan perhitungan wetonnya, terkadang mencari calon saja sudah susah ditambah ketika weton tidak pas, akan
+                    tetapi hal tersebut merupakan salah satu upaya agar pernikahan yang dilakukan tidak kandas ditengah jalan, meskipun upaya tersebut kebenarannya tidak bernilai mutlak.
+                </p>
             </div>
         </div>
     </div>
 
     <div class="footer">
-        <p style="text-align: center;"> Klenik Pedia &copy 2019. Created by <a style="font-weight: bold;"href="https://www.instagram.com/arfiansyah09_/">Able</a></p>
+        <p class="text-center">Klenik<span class="text-primary">Pedia</span>&copy<span id="tahun"></span>. Created by <a class="text-decoration-none text-secondary fw-bold" href="https://www.instagram.com/arfiansyah09_/">Able</a></p>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="switch.js"></script>
+    <script>
+        var d = new Date();
+        document.getElementById('tahun').innerHTML = d.getFullYear();
+    </script>
 </body>
 
 </html>
