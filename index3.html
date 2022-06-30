@@ -55,22 +55,22 @@
     <div class="container-fluid mt-5 mb-3" id="hasil2" style="display: block">
         <h2 class="text-center">ISI DATA ANDA DENGAN LENGKAP</h2>
         <div class="mx-auto col-11">
-            <form id="form">
+            <form id="form" method="POST">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nama Lengkap Anda</label>
-                    <input class="form-control" type="text" name="nama" id="nama" placeholder="Tuliskan Nama Lengkap Anda Disini..." required autocomplete="off" />
+                    <label for="Nama" class="form-label">Nama Lengkap Anda</label>
+                    <input class="form-control" type="text" name="Nama" id="nama" placeholder="Tuliskan Nama Lengkap Anda Disini..." required autocomplete="off" />
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Tanggal Lahir Anda</label>
-                    <input class="form-control" type="date" name="tgl" id="tgl" value="2000-01-01" required />
+                    <label for="Tanggal_Lahir" class="form-label">Tanggal Lahir Anda</label>
+                    <input class="form-control" type="date" name="Tanggal_Lahir" id="tgl" value="2000-01-01" required />
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nama Lengkap Pasangan Anda</label>
-                    <input class="form-control" type="text" name="namap" id="namap" placeholder="Tuliskan Nama Lengkap Pasangan Anda Disini..." required autocomplete="off" />
+                    <label for="Nama_Pasangan" class="form-label">Nama Lengkap Pasangan Anda</label>
+                    <input class="form-control" type="text" name="Nama_Pasangan" id="namap" placeholder="Tuliskan Nama Lengkap Pasangan Anda Disini..." required autocomplete="off" />
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Tanggal Lahir Pasangan Anda</label>
-                    <input class="form-control" type="date" name="tglp" id="tglp" value="2000-01-01" required />
+                    <label for="Tanggal_Lahir_Pasangan" class="form-label">Tanggal Lahir Pasangan Anda</label>
+                    <input class="form-control" type="date" name="Tanggal_Lahir_Pasangan" id="tglp" value="2000-01-01" required />
                 </div>
                 <button class="btn btn-primary" type="submit" onclick="fungsi()">Selesai</button>
             </form>
@@ -120,6 +120,20 @@
         }
     </script>
     <script src="tahun.js "></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz4KmMOz1llxuf8g1TcWcyMW9UaQ3eftFA21z4veGR0_sENt4PqcfaHcYlnGMidSD-cvQ/exec';
+        const form = document.getElementById('form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form),
+                })
+                .then((Response) => console.log('OK'))
+                .catch((error) => console.log('GOK'));
+        });
+    </script>
 </body>
 
 </html>
