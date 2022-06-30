@@ -1,5 +1,5 @@
-var form = document.getElementById('form');
-form.addEventListener('submit', function(event) {
+var formulir = document.getElementById('form');
+formulir.addEventListener('submit', function(event) {
     event.preventDefault();
 
     var nama = document.getElementById('nama').value;
