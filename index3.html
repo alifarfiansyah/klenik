@@ -55,22 +55,22 @@
     <div class="container-fluid mt-5 mb-3" id="hasil2" style="display: block">
         <h2 class="text-center">ISI DATA ANDA DENGAN LENGKAP</h2>
         <div class="mx-auto col-11">
-            <form id="form" method="POST">
+            <form id="form" name="form">
                 <div class="mb-3">
-                    <label for="Nama" class="form-label">Nama Lengkap Anda</label>
-                    <input class="form-control" type="text" name="Nama" id="nama" placeholder="Tuliskan Nama Lengkap Anda Disini..." required autocomplete="off" />
+                    <label for="nama" class="form-label">Nama Lengkap Anda</label>
+                    <input class="form-control" type="text" name="nama" id="nama" placeholder="Tuliskan Nama Lengkap Anda Disini..." required autocomplete="off" />
                 </div>
                 <div class="mb-3">
-                    <label for="Tanggal_Lahir" class="form-label">Tanggal Lahir Anda</label>
-                    <input class="form-control" type="date" name="Tanggal_Lahir" id="tgl" value="2000-01-01" required />
+                    <label for="tanggal_lahir" class="form-label">Tanggal Lahir Anda</label>
+                    <input class="form-control" type="date" name="tanggal_lahir" id="tanggal_lahir" value="2000-01-01" required />
                 </div>
                 <div class="mb-3">
-                    <label for="Pasangan" class="form-label">Nama Lengkap Pasangan Anda</label>
-                    <input class="form-control" type="text" name="Pasangan" id="namap" placeholder="Tuliskan Nama Lengkap Pasangan Anda Disini..." required autocomplete="off" />
+                    <label for="pasangan" class="form-label">Nama Lengkap Pasangan Anda</label>
+                    <input class="form-control" type="text" name="pasangan" id="pasangan" placeholder="Tuliskan Nama Lengkap Pasangan Anda Disini..." required autocomplete="off" />
                 </div>
                 <div class="mb-3">
-                    <label for="Tanggal_Lahir_Pasangan" class="form-label">Tanggal Lahir Pasangan Anda</label>
-                    <input class="form-control" type="date" name="Tanggal_Lahir_Pasangan" id="tglp" value="2000-01-01" required />
+                    <label for="tanggal_lahir_pasangan" class="form-label">Tanggal Lahir Pasangan Anda</label>
+                    <input class="form-control" type="date" name="tanggal_lahir_pasangan" id="tanggal_lahir_pasangan" value="2000-01-01" required />
                 </div>
                 <button class="btn btn-primary" type="submit" onclick="fungsi()">Selesai</button>
             </form>
@@ -119,20 +119,21 @@
             }
         }
     </script>
-    <script src="tahun.js "></script>
+    <script src="tahun.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz4KmMOz1llxuf8g1TcWcyMW9UaQ3eftFA21z4veGR0_sENt4PqcfaHcYlnGMidSD-cvQ/exec';
-        const form = document.getElementById('form');
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxDpwnUlnakLDN-J-YVCojNPqRLrW6WMH1fBVNe_LHIcFhK_kLQ-uKCJxKIF_2R6R3Y/exec';
+        const form = document.forms['form'];
 
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             fetch(scriptURL, {
-                    mode: 'no-cors',
                     method: 'POST',
-                    body: new FormData(form),
+                    body: new FormData(form)
                 })
-                .then((Response) => console.log('OK'))
-                .catch((error) => console.log('GOK'));
+                .then((response) => console.log('Success!', response))
+                .catch((error) => console.error('Error!', error.message));
         });
     </script>
 </body>

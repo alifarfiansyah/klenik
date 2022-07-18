@@ -3,7 +3,7 @@ formulir.addEventListener('submit', function(event) {
     event.preventDefault();
 
     var nama = document.getElementById('nama').value;
-    var tgl = document.getElementById('tgl').value;
+    var tgl = document.getElementById('tanggal_lahir').value;
     tgl = tgl.split('-');
     var tanggal = parseInt(tgl[2]);
     var bulan = parseInt(tgl[1]);
@@ -13,8 +13,8 @@ formulir.addEventListener('submit', function(event) {
     var pasaran = hitungan[1];
     var jumlah = hitung(hari, pasaran);
 
-    var nama2 = document.getElementById('namap').value;
-    var tgl2 = document.getElementById('tglp').value;
+    var nama2 = document.getElementById('pasangan').value;
+    var tgl2 = document.getElementById('tanggal_lahir_pasangan').value;
     tgl2 = tgl2.split('-');
     var tanggal2 = parseInt(tgl2[2]);
     var bulan2 = parseInt(tgl2[1]);
@@ -43,7 +43,7 @@ formulir.addEventListener('submit', function(event) {
         has[0] +
         ' yang artinya ' +
         has[1] +
-        ' Mungkin itu sedikit uraian dari kami, kami harap hasil tersebut dapat menjadi referensi anda.';
+        ". Mungkin itu sedikit uraian dari kami, kami harap hasil tersebut dapat menjadi referensi anda. Hasil perhitungan ini berdasarkan teori yang dikutip dari jurnal yang berjudul Perhitungan Weton sebagai Penentu Hari Pernikahan dalam Tradisi Masyarakat Jawa Kabupaten Deli Serdang (Ditinjau dalam Persfektif 'Urf dan Sosiologi Hukum) (Harahap, Adly dan Marpaung, 2021).";
 });
 
 function weton(tanggal, bulan, tahunasli) {
